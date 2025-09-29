@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+
+    int d, w, y, remaining_days;
+    scanf("%d", &d);
+    y = d / 365;
+    w = (d % 365) / 7;
+    remaining_days = 7 % w;
+    printf("Years: %d\n", y);
+    printf("Weeks: %d\n", w);
+    printf("Days: %d", remaining_days);
+    return 0;
+}
