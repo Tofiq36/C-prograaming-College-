@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int B;
+    scanf("%d", &B);
+    float HRA, DA;
+    if (B <= 10000) {
+        HRA = 0.20f * B;
+        DA = 0.30f * B;
+    } else if (B <= 20000) {
+        HRA = 0.25f * B;
+        DA = 0.40f * B;
+    } else {
+        HRA = 0.30f * B;
+        DA = 0.50f * B;
+    }
+    float GrossSalary = B + HRA + DA;
+    printf("%.2f", GrossSalary);
+    return 0;
+}
+
