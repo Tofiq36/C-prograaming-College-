@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N, i;
+    scanf("%d", &N);
+
+    int fact = 1;
+    for (i = 1; i <= N; i++) {
+        fact *= i;
+    }
+
+    printf("%d", fact);
+    return 0;
+}
