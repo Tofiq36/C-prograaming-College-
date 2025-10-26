@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N, original, sum = 0, digits = 0, temp;
+    scanf("%d", &N);
+    original = N;
+    temp = N;
+    while (temp != 0) {
+        digits++;
+        temp /= 10;
+    }
+    temp = N;
+    while (temp != 0) {
+        int digit = temp % 10;
+        sum += (int)pow(digit, digits);
+        temp /= 10;
+    }
+    if (sum == original) {
+        printf("Armstrong\n");
+    } else {
+        printf("Not Armstrong\n");
+    }
+    return 0;
+}
