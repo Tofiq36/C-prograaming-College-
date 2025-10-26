@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long N;
+    scanf("%lld", &N);
+    
+    if (N == 0) {
+        printf("Zero");
+        return 0;
+    }
+    
+    long long digits[20];
+    int count = 0;
+    
+    while (N > 0) {
+        digits[count++] = N % 10;
+        N /= 10;
+    }
+    
+    for (int i = count - 1; i >= 0; i--) {
+        switch (digits[i]) {
+            case 0: printf("Zero"); break;
+            case 1: printf("One"); break;
+            case 2: printf("Two"); break;
+            case 3: printf("Three"); break;
+            case 4: printf("Four"); break;
+            case 5: printf("Five"); break;
+            case 6: printf("Six"); break;
+            case 7: printf("Seven"); break;
+            case 8: printf("Eight"); break;
+            case 9: printf("Nine"); break;
+        }
+        if (i != 0)
+            printf(" ");
+    }
+    
+    return 0;
+}
