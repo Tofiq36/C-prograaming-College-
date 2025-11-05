@@ -1,0 +1,115 @@
+1st Assignment:
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum, diff, produ, rem;
+
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    sum = num1 + num2;
+
+    diff = num1 - num2;
+
+    produ = num1 * num2;
+
+    rem = num1 % num2;
+
+    printf("Addition = %d\n", sum);
+    printf("Subtraction = %d\n", diff);
+    printf("Multiplication = %d\n", produ);
+    printf("Remainder = %d\n", rem);
+
+    return 0;
+}
+
+
+2nd Assignment:
+
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    a = a + b;  // sum stored in a
+    b = a - b;  // original value of a assigned to b
+    a = a - b;  // original value of b assigned to a
+
+    printf("After swapping:\n");
+    printf("First number = %d\n", a);
+    printf("Second number = %d\n", b);
+
+    return 0;
+}
+
+3rd Assignment:
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    int sum;
+
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+
+    sum = (N * (N + 1)) / 2;
+
+    printf("Sum of numbers from 1 to %d = %d\n", N, sum);
+
+    return 0;
+}
+
+Assignment 4:
+
+#include <stdio.h>
+
+int main() {
+    int N, i;
+
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+
+    printf("Even numbers from 1 to %d are:\n", N);
+
+    for (i = 1; i <= N; i++) {
+        if (i % 2 == 0) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+
+Assignment 5:
+
+#include <stdio.h>
+
+int main() {
+    float principal, time, rate, simpleInterest;
+
+    printf("Enter principal amount: ");
+    scanf("%f", &principal);
+
+    printf("Enter time (in years): ");
+    scanf("%f", &time);
+
+    printf("Enter rate of interest (annual): ");
+    scanf("%f", &rate);
+
+    simpleInterest = (principal * time * rate) / 100;
+
+    printf("Simple Interest = %.2f\n", simpleInterest);
+
+    return 0;
+}
